@@ -1,0 +1,15 @@
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .nav_menu_bar{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .service_box{
+        margin-top: 30px;
+    }
+}
+
