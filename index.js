@@ -23,7 +23,7 @@ function Filtering() {
                     blk.style.width = `400px`;
                     blk.style.marginLeft = `5px`;
                     blk.style.marginRight = `5px`;
-                    blk.style.height = `460px`;
+                    blk.style.height = `420px`;
                 }
             })
         if (e.target.dataset.menu == 'all'){
@@ -35,7 +35,7 @@ function Filtering() {
                     block.style.width = `400px`;
                     block.style.marginLeft = `5px`;
                     block.style.marginRight = `5px`;
-                    block.style.height = `460px`;
+                    block.style.height = `420px`;
             })
         }
 
@@ -44,3 +44,6 @@ function Filtering() {
     })
 }
 Filtering()
+
+
+

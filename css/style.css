@@ -261,10 +261,10 @@ h1{
 
 .single {
     width: 400px;
-    height: 520px;
+    height: 420px;
     text-align: center;
     line-height: 200px;
-    background: red;
+   
     /* margin: 0 5px; */
     margin-top: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -273,6 +273,9 @@ h1{
     background-size: cover; 
     display: flex;
     flex-direction: column;
+    background: #FFFFFF;
+    border: 2px solid #dddd;
+    border-radius: 6px;
 }
 .btns {
     text-align: center;
@@ -316,4 +319,72 @@ h1{
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
 }
+
+.ph1{
+    width: 400px;
+    height: 360px;
+    float: left;
+    background-color: blue;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.ph1 img{
+    width: 400px;
+    height: 360px;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+}
+.e_btn{
+    width: 400px;
+    height: 60px;
+    float: left;
+    background-color: #FF214F;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    border-radius: 6px;
+   
+}
+
+.e_btn p{
+    padding-top: 10px;
+}
+
+.overplay{
+    position: absolute;
+    content: '';
+    /* top: 0px;
+    left: 50%; */
+    width: 80px;
+    height: 80px;
+    background: #ff214f;
+    opacity: 0.8;
+    z-index: 3;
+    transition: 0.2s ease-out;
+    /* margin-left: -40px; */
+    border-radius: 5px;
+    border: 1px solid #fff;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+}
+
+.overplay:hover{
+    display: block;
+}
+
 
