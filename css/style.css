@@ -192,6 +192,11 @@ h1{
 
 }
 
+/* section2 end */
+
+
+/* section3 start */
+
 .kvadrat{
    z-index: 2;
     top: 45px;
@@ -237,3 +242,78 @@ h1{
 .p_1{
    margin: 10px 10px 0 10px;
 }
+
+/* section3 end */
+
+
+/* section4 start */
+
+.allwrps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.single {
+    width: 400px;
+    height: 520px;
+    text-align: center;
+    line-height: 200px;
+    background: red;
+    /* margin: 0 5px; */
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+    border-radius: 6px;  
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+}
+.btns {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.btns button {
+    /* padding: 40px 40px; */
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .3s;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #ff214f;
+    
+    /* padding: 20px 20px 20px 30px; */
+    
+    
+    
+}
+
+.btns button:hover,.btns button.active {
+    background: blueviolet;
+    color: #fff;
+}
+
+.vnutr_btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
