@@ -1,3 +1,16 @@
+const list = document.querySelectorAll('.list')
+    list.forEach((elem)=>{
+        elem.addEventListener('click',function(){
+            list.forEach((elem)=>{
+                elem.classList.remove('active_bg');
+            });
+            this.classList.add('active_bg');
+    
+
+    
+        })
+    
+    })
 function Filtering() {
     let buttons = document.querySelectorAll('.btns button')
     let blocks  = document.querySelectorAll('.single')

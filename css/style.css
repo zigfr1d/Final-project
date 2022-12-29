@@ -21,11 +21,13 @@ h1 {
   height: 100vh;
   float: left;
   background-image: url("../img/intro-bg3.jpg");
+  background-position: center;
   background-size: cover;
+  
 }
 .navbar {
   width: 100%;
-  height: 90px;
+  height: 70px;
   float: left;
   background: transparent;
   display: flex;
@@ -33,7 +35,7 @@ h1 {
 }
 .navlogo {
   width: 25%;
-  height: 90px;
+  height: 70px;
   float: left;
   background: transparent;
   display: flex;
@@ -49,12 +51,15 @@ h1 {
   text-decoration: none;
   color: #bd1c3d;
 }
+.bot{
+  height: 46vh !important;
+}
 
 .navmenu {
   width: 75%;
-  height: 90px;
+  height: 70px;
   float: left;
-  /* background: pink; */
+  
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -78,6 +83,16 @@ h1 {
   display: none;
 }
 
+ .mobile_menu{
+  padding: 0;
+}
+.offcanvas-header{
+  font-size: 20px;
+
+  font-family: 'Raleway',sans-serif;
+}
+
+
 .navmenu a {
   text-decoration: none;
   color: #f9f9f9;
@@ -90,18 +105,30 @@ h1 {
   letter-spacing: 1px;
   color: #000;
 }
+.navmenu .mobile_menu li {
+  list-style-type: none;
+  padding: 10px;
+  
+  
+}
+
+.navmenu .mobile_menu li a{
+  margin-left: 30px;
+  color: #777777;
+  
+}
 .home_middle {
   width: 100%;
   height: 650px;
   float: left;
-  /* background: red; */
+ 
   box-sizing: border-box;
 }
 .home_middle_write {
   width: 100%;
   height: 400px;
   float: left;
-  /* background: blue; */
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +138,7 @@ h1 {
   width: 100%;
   height: 250px;
   float: left;
-  /* background: pink; */
+ 
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -126,7 +153,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: red; */
+ 
 
   margin-top: 40px;
 }
@@ -142,7 +169,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 80px; */
+ 
   text-align: center;
 }
 .section2_text h2 {
@@ -222,15 +249,7 @@ h1 {
 
 /* section4 start */
 
-/* .allwrps {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto; 
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-} */
+
 
 .single {
   width: 400px;
@@ -238,7 +257,7 @@ h1 {
   text-align: center;
   line-height: 200px;
 
-  /* margin: 0 5px; */
+ 
   margin-top: 50px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: 0.3s;
@@ -251,47 +270,10 @@ h1 {
   border-radius: 7px;
   
 }
-/* .btns {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-} */
 
-/* .btns button {
-  padding: 40px 40px;
-  width: 80px;
-  height: 80px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  margin: 0 10px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-sizing: border-box;
-  color: #fff;
-  background-color: #ff214f;
-
-  padding: 20px 20px 20px 30px;
-}
-
-.btns button:hover,
-.btns button.active {
-  background: blueviolet;
-  color: #fff;
-} */
-
-/* .vnutr_btn2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 1px;
-} */
 
 .ph1 {
+  position: relative;
   width: 400px;
   height: 360px;
   float: left;
@@ -331,26 +313,7 @@ h1 {
   padding-top: 10px;
 }
 
-.overplay {
-  position: absolute;
-  content: "";
-  /* top: 0px;
-    left: 50%; */
-  width: 80px;
-  height: 80px;
-  background: #ff214f;
-  opacity: 0.8;
-  z-index: 3;
-  transition: 0.2s ease-out;
-  /* margin-left: -40px; */
-  border-radius: 5px;
-  border: 1px solid #fff;
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
+
 .mycld {
   margin: 0 auto;
   
@@ -364,6 +327,7 @@ h1 {
   margin: 10px;
   border: none;
   color: grey;
+  background: transparent;
 
 }
 .control1{
@@ -373,4 +337,207 @@ h1 {
   margin: 10px;
   border: none;
   color: grey;
+  background: transparent;
 }
+
+
+
+
+.active_bg{
+  background-color: #FF214F ;
+  color: #fff;
+}
+
+
+
+.zoom{
+
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 999;
+padding: 50px;
+margin-top:-50px;
+background-color: #FF214F;
+border-radius:5%;
+display:none;
+transition: transform .2s;
+width: 100px;
+height: 100px;
+margin: 0 auto;
+
+opacity: 0.8;
+
+
+}
+.ph1:hover .zoom{display:block;}
+.zoom:hover{transform:rotate(50deg);};
+
+
+
+/* section4 end */
+
+
+/* section5 start */
+
+.swipe_tekst2{
+  margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.desg{
+  font-size: 14px;
+    margin: 0 0 10px;
+    color: #777777;
+}
+
+.kvadrat2 {
+  z-index: 2;
+  top: 45px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: #ff214f;
+  z-index: -1;
+  transition: 0.2s ease-out;
+  
+  border-radius: 5px;
+  margin-left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+/* section5 end */
+
+
+
+/* section6 start */
+
+.form_control{
+  /* display: block; */
+   
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    color: #333;
+    box-shadow: none;
+    margin: 5px 0;
+    margin-left: 10px;
+    border: none;
+}
+
+.form_group{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  
+}
+
+.inp_button{
+  display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    background: #ff214f;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+
+/* section6 end */
+
+
+
+/* section7 start */
+
+.back{
+  display: flex;
+  justify-content: center;
+ 
+}
+.mySection{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+  
+}
+
+
+.kvadrat3 {
+  
+  
+  
+  width: 40px;
+  height: 40px;
+  background: #ff214f;
+float: left;
+  transition: 0.2s ease-out;
+  transform: rotate(45deg);
+  
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  color: white;
+}
+
+.kvadrat3:hover{
+  background: white;
+  cursor: pointer;
+}
+
+.section7_icon{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.section7_txt{
+  height: 100px;
+}
+
+.facebook_icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  transform: rotate(315deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+
+
+/* section7 end */

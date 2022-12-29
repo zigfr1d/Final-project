@@ -39,6 +39,11 @@
     />
 
     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -55,13 +60,13 @@
         <div class="row">
           <div class="main_back">
             <div class="container-fluid">
-              <div class="navbar">
+              <div class="navbar fixed-top">
                 <div class="navlogo">
                   <a href="#">
                     <span>SHOWKIL</span>
                   </a>
                 </div>
-                <div class="navmenu">
+                <div class="navmenu ">
                   <ul class="nav_menu_bar">
                     <li>
                       <a class="Home" href="#"><b>Home</b></a>
@@ -69,18 +74,18 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#work">Work</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
-                  <div class="burger">
+                  <div style="margin-right: 25px;" class="burger">
                     <a href="#demo" data-bs-toggle="offcanvas">
                       <i class="fa-solid fa-bars fa-2x"></i
                     ></a>
                   </div>
-                  <div class="offcanvas offcanvas-top" id="demo">
+                  <div  class="offcanvas offcanvas-top bot" id="demo">
                     <div class="offcanvas-header">
                       <a href="#" style="color: #000">
-                        <span>SHOWKIL</span>
+                        <span> <b>SHOWKIL</b> </span>
                       </a>
 
                       <button
@@ -96,8 +101,8 @@
                       <li><a href="#about">About</a></li>
                       <li><a href="#services">Services</a></li>
                       <li><a href="#work">Work</a></li>
-                      <li><a href="#">Testimonial</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="#testimonial">Testimonial</a></li>
+                      <li><a href="#contact">Contact</a></li>
                     </div>
                   </div>
                 </div>
@@ -146,7 +151,7 @@
       <div class="container">
         <div id="about" class="about">
           <div class="section2_text">
-            <h2>ABOUT ME</h2>
+            <h2><b>ABOUT ME</b></h2>
             <span class="oval"></span>
             <p class="section2_p">
               The new common language will be more simple and regular than.
@@ -192,7 +197,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <div id="services" class="section2_text">
-              <h2>What I DO</h2>
+              <h2><b>WHAT I DO</b></h2>
               <span class="oval"></span>
               <p class="section2_p">
                 The new common language will be more simple and regular than.
@@ -257,12 +262,12 @@
 
     <hr />
 
-    <section>
+    <section  style="padding: 100px 0px">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
             <div id="work" class="section2_text">
-              <h2>My Works</h2>
+              <h2><b>MY WORKS</b></h2>
               <span class="oval"></span>
               <p class="section2_p">
                 The new common language will be more simple and regular than.
@@ -272,244 +277,304 @@
         </div>
       </div>
 
-      <!-- <div class="container-fluid">
-        <div class="row">
-          <div class="btns">
-            <button
-              style="padding: 10px 20px 20px 30px"
-              type="button"
-              data-menu="all"
-            >
-              <div class="vnutr_icon">
-                <i class="fa-regular fa-file-powerpoint fa-2x"></i>
-              </div>
-              All
-            </button>
-            <button
-              style="padding: 10px 20px 20px 25px"
-              type="button"
-              data-menu="Web"
-            >
-              <div class="vnutr_icon">
-                <i class="fa-solid fa-table-columns fa-2x"></i>
-              </div>
-              Web
-            </button>
-            <button
-              style="padding: 10px 20px 20px 25px"
-              type="button"
-              data-menu="App "
-            >
-              <div class="vnutr_icon">
-                <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
-              </div>
-              App
-            </button>
-            <button
-              style="padding: 10px 20px 20px 15px"
-              type="button"
-              data-menu="Graphic"
-            >
-              <div class="vnutr_icon">
-                <i class="fa-solid fa-camera fa-2x"></i>
-              </div>
-              Graphic
-            </button>
+
+      <div style="margin-top: 30px;"  class="controls d-flex justify-content-center align-items-center">
+        <button  type="button" class="list active_bg control1 active " data-filter=".all"> <div class="vnutr_icon">
+          <i class="fa-regular fa-file-powerpoint fa-2x"></i>
+        </div>All</button>
+        <button type="button" class="list control" data-filter=".web">  <div class="vnutr_icon">
+          <i class="fa-solid fa-table-columns fa-2x"></i>
+        </div>Web</button>
+        <button type="button" class="list control" data-filter=".app"> <div class="vnutr_icon">
+          <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+        </div>App</button>
+        <button type="button" class="list control" data-filter=".graphic">
+          <div class="vnutr_icon">
+            <i class="fa-solid fa-camera fa-2x"></i>
           </div>
-          <div class="allwrps">
-            <div data-menu="Web" class="single">
-              <div class="ph1">
-                <img
-                  src="https://infolook.net/tf_preview/showkil/assets/img/works/1.jpg"
-                  alt=""
-                />
-                <div
-                  id="overplay"
-                  class="overplay"
-                  onmouseover="mouseOver()"
-                  onmouseout="mouseOut()"
-                >
-                  <i class="fa-solid fa-arrows-to-eye"></i>
-                </div>
+          Graphic
+        </button>
+      </div>
+  
+      <div class="containere container d-flex row mycld">
+        <div class="mix web all col-lg-4">
+          <div class="single">
+            <div class="ph1">
+              <div  class="zoom">
+                
+                
               </div>
-              <div class="e_btn"><p>This is project Title</p></div>
+              <img
+                src="https://infolook.net/tf_preview/showkil/assets/img/works/1.jpg"
+                alt=""
+              />
             </div>
-
-            <div data-menu="App" class="single">
-              <div class="ph1">
-                <img
-                  src="https://infolook.net/tf_preview/showkil/assets/img/works/4.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="e_btn"><p>This is project Title</p></div>
-            </div>
-
-            <div data-menu="App" class="single">
-              <div class="ph1">
-                <img
-                  src="https://infolook.net/tf_preview/showkil/assets/img/works/5.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="e_btn"><p>This is project Title</p></div>
-            </div>
-            <div data-menu="Web" class="single">
-              <div class="ph1">
-                <img
-                  src="https://infolook.net/tf_preview/showkil/assets/img/works/3.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="e_btn"><p>This is project Title</p></div>
-            </div>
-
-            <div data-menu="App" class="single">
-              <div class="ph1">
-                <img
-                  src="https://infolook.net/tf_preview/showkil/assets/img/works/6.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="e_btn"><p>This is project Title</p></div>
-            </div>
-            <div data-menu="Graphic" class="single">
-              <div class="ph1">
-                <img
-                  src="https://infolook.net/tf_preview/showkil/assets/img/works/3.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="e_btn"><p>This is project Title</p></div>
-            </div>
+            <div class="e_btn"><p>This is project Title</p></div>
           </div>
         </div>
-      </div> -->
+        <div class="mix all graphic col-lg-4">
+          <div class="single">
+            <div class="ph1">
+              <div  class="zoom"></div>
+              <img
+                src="https://infolook.net/tf_preview/showkil/assets/img/works/2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="e_btn"><p>This is project Title</p></div>
+          </div>
+        </div>
+        <div class="mix web all col-lg-4">
+          <div class="single">
+            <div class="ph1">
+              <div  class="zoom"></div>
+              <img
+                src="https://infolook.net/tf_preview/showkil/assets/img/works/3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="e_btn"><p>This is project Title</p></div>
+          </div>
+        </div>
+        <div class="mix web app all col-lg-4">
+          <div class="single">
+            <div class="ph1">
+              <div  class="zoom"></div>
+              <img
+                src="https://infolook.net/tf_preview/showkil/assets/img/works/4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="e_btn"><p>This is project Title</p></div>
+          </div>
+        </div>
+        <div class="mix graphic app all col-lg-4">
+          <div class="single">
+            <div class="ph1">
+              <div  class="zoom"></div>
+              <img
+                src="https://infolook.net/tf_preview/showkil/assets/img/works/5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="e_btn"><p>This is project Title</p></div>
+          </div>
+        </div>
+        <div class="mix graphic app all col-lg-4">
+          <div class="single">
+            <div class="ph1">
+              <div  class="zoom"></div>
+              <img
+                src="https://infolook.net/tf_preview/showkil/assets/img/works/6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="e_btn"><p>This is project Title</p></div>
+          </div>
+        </div>
+      </div>
+  
+
+      
     </section>
-    <div  class="controls d-flex justify-content-center align-items-center">
-      <button  type="button" class="control1 active " data-filter=".all"> <div class="vnutr_icon">
-        <i class="fa-regular fa-file-powerpoint fa-2x"></i>
-      </div>All</button>
-      <button type="button" class="control" data-filter=".web">  <div class="vnutr_icon">
-        <i class="fa-solid fa-table-columns fa-2x"></i>
-      </div>Web</button>
-      <button type="button" class="control" data-filter=".app"> <div class="vnutr_icon">
-        <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
-      </div>App</button>
-      <button type="button" class="control" data-filter=".graphic">
-        <div class="vnutr_icon">
-          <i class="fa-solid fa-camera fa-2x"></i>
-        </div>
-        Graphic
-      </button>
-    </div>
-
-    <div class="containere container d-flex row mycld">
-      <div class="mix web all col-lg-4">
-        <div class="single">
-          <div class="ph1">
-            <img
-              src="https://infolook.net/tf_preview/showkil/assets/img/works/1.jpg"
-              alt=""
-            />
+    
+    <hr>
+    
+    <section style="padding: 100px 0px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div  id="testimonial"  class="section2_text" >
+              <h2><b>HAPPY  CLIENTS</b></h2>
+              <span class="oval"></span>
+              <p style="margin-top: 15px;" class="section2_p">
+                The new common language will be more simple and regular than.
+              </p>
+            </div>
           </div>
-          <div class="e_btn"><p>This is project Title</p></div>
         </div>
       </div>
-      <div class="mix all graphic col-lg-4">
-        <div class="single">
-          <div class="ph1">
-            <img
-              src="https://infolook.net/tf_preview/showkil/assets/img/works/2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="e_btn"><p>This is project Title</p></div>
-        </div>
-      </div>
-      <div class="mix web all col-lg-4">
-        <div class="single">
-          <div class="ph1">
-            <img
-              src="https://infolook.net/tf_preview/showkil/assets/img/works/3.jpg"
-              alt=""
-            />
-          </div>
-          <div class="e_btn"><p>This is project Title</p></div>
-        </div>
-      </div>
-      <div class="mix web app all col-lg-4">
-        <div class="single">
-          <div class="ph1">
-            <img
-              src="https://infolook.net/tf_preview/showkil/assets/img/works/4.jpg"
-              alt=""
-            />
-          </div>
-          <div class="e_btn"><p>This is project Title</p></div>
-        </div>
-      </div>
-      <div class="mix graphic app all col-lg-4">
-        <div class="single">
-          <div class="ph1">
-            <img
-              src="https://infolook.net/tf_preview/showkil/assets/img/works/5.jpg"
-              alt=""
-            />
-          </div>
-          <div class="e_btn"><p>This is project Title</p></div>
-        </div>
-      </div>
-      <div class="mix graphic app all col-lg-4">
-        <div class="single">
-          <div class="ph1">
-            <img
-              src="https://infolook.net/tf_preview/showkil/assets/img/works/6.jpg"
-              alt=""
-            />
-          </div>
-          <div class="e_btn"><p>This is project Title</p></div>
-        </div>
-      </div>
-    </div>
 
-    <!-- section5start -->
 
-    <div class="">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide myslid">Slide 1</div>
-          <div class="swiper-slide myslid">Slide 2</div>
-          <div class="swiper-slide myslid">Slide 3</div>
-          <div class="swiper-slide myslid">Slide 4</div>
+      <div class="container">
+        <div class="row">
+          <div style="margin-top: 15px;"  class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide myslid">
+              <div class="kvadrat2">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="tekst_swipe">
+                <p>The new common language will be more simple and regular than. It will be more Occidental in fact. The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
+              </div>
+              <div class="tekst_swipe2">
+                <h4 class="swipe_tekst2">- Mr. Jonathon Doe</h4>
+                <p class="desg">Founder of web_bean</p>
+              </div>
+            </div>
+            <div class="swiper-slide myslid">
+              <div class="kvadrat2">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="tekst_swipe">
+                <p>The new common language will be more simple and regular than. It will be more Occidental in fact. The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
+              </div>
+              <div class="tekst_swipe2">
+                <h4 class="swipe_tekst2">- Mr. Jonathon Doe</h4>
+                <p class="desg">Founder of web_bean</p>
+              </div>
+            </div>
+            <div class="swiper-slide myslid">
+              <div class="kvadrat2">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="tekst_swipe">
+                <p>The new common language will be more simple and regular than. It will be more Occidental in fact. The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
+              </div>
+              <div class="tekst_swipe2">
+                <h4 class="swipe_tekst2">- Mr. Jonathon Doe</h4>
+                <p class="desg">Founder of web_bean</p>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide myslid">Slide 4</div> -->
+          </div>
+        </div>
+        <style>
+          .myslid {
+            height: 350px;
+            background-color: #fff;
+            width: 585px;
+            border-radius: 5px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 25px;
+            border: 1px solid #dddd;
+            text-align: center;
+          }
+        </style>
+  
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+  
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+              
+            },
+          });
+        </script>
+        </div>
+        
+      </div>
+
+
+
+    </section>
+
+    <hr>
+
+
+    <section style="padding: 60px 0px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div id="contact" class="section2_text">
+              <h2><b>CONTACT ME</b></h2>
+              <span class="oval"></span>
+              <p class="section2_p">
+                The new common language will be more simple and regular than.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="inputs">
+              <div class="form_group">
+                <i style="color: #ff214f;" class="fa-solid fa-user "></i>
+                <input class="form_control" type="text" placeholder="Name "  name="name" required="required">
+
+                
+
+              </div>
+              <div class="form_group">
+                <i style="color: #ff214f;" class="fa-solid fa-paper-plane"></i>
+                <input class="form_control" type="text" placeholder="Email "  name="name" required="required">
+
+                
+
+              </div>
+
+              <div class="form_group">
+                <i style="color: #ff214f;" class="fa-solid fa-envelope"></i>
+                <input class="form_control" type="text" placeholder="Message "  name="name" required="required">
+
+                
+
+              </div>
+
+              <button class="inp_button" type="button"> <b>Send Message</b></button>
+              
+            </div>
+            <div class="sbutton"></div>
+          </div>
+
         </div>
       </div>
-      <style>
-        .myslid {
-          min-height: 300px;
-          background-color: violet;
-        }
-      </style>
+    </section>
 
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          slidesPerGroup: 2,
-          loop: true,
-          loopFillGroupWithBlank: true,
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="back" style="background: #333333; height: 360px; width: 100%;">
+          <div class="container mySection">
+            <div class="row">
+              <div class="section7_txt">
+                <p style="color: #ddd;">1502 N Elm St, Fairmont, MN, 56031, United States</p>
+                <p style="cursor: pointer; color: #ddd;">+00 123-456-789</p>
+                <p style="cursor: pointer; color: #ddd;">email@yourdomain.com</p>
+                <p style="cursor: pointer; color: #ddd;">www.yourdomain.com</p>
+              </div>
+              <div class="section7_icon">
+               
+                 <div class="kvadrat3">
+                  <div class="facebook_icon"><i class="fa-brands fa-facebook-f"></i></div>
+                 </div>
+                 <div class="kvadrat3">
+                  <div class="facebook_icon"><i class="fa-brands fa-twitter"></i></div>
+                 </div>
+                 <div class="kvadrat3">
+                  <div class="facebook_icon"><i class="fa-brands fa-google-plus-g"></i></div>
+                 </div>
+                 <div class="kvadrat3">
+                  <div class="facebook_icon"><i class="fa-brands fa-tumblr"></i></div>
+                 </div>
+                 <div class="kvadrat3">
+                  <div class="facebook_icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                 </div>
+              </div>
+              <div class="section7_final" style="color: #ddd;">
+                <p>© 2018 Copyright web_bean</p>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </footer>
 
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-        });
-      </script>
-    </div>
+    
   </body>
 </html>
 <script
