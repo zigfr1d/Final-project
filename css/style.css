@@ -33,6 +33,17 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+.navbar2{
+  float: left;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0px 3px 4.7px 0.3px rgb(0 0 0 / 24%);
+  transition: all 0.3s ease-out;
+}
 .navlogo {
   width: 25%;
   height: 70px;
@@ -95,7 +106,7 @@ h1 {
 
 .navmenu a {
   text-decoration: none;
-  color: #f9f9f9;
+  color: #000;
   letter-spacing: 1px;
 }
 
@@ -541,3 +552,6 @@ float: left;
 
 
 /* section7 end */
+
+
+

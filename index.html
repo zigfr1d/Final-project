@@ -51,6 +51,16 @@
       referrerpolicy="no-referrer"
     />
 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
@@ -60,7 +70,7 @@
         <div class="row">
           <div class="main_back">
             <div class="container-fluid">
-              <div class="navbar fixed-top">
+              <div id="myNav" class="navbar fixed-top">
                 <div class="navlogo">
                   <a href="#">
                     <span>SHOWKIL</span>
@@ -69,7 +79,7 @@
                 <div class="navmenu ">
                   <ul class="nav_menu_bar">
                     <li>
-                      <a class="Home" href="#"><b>Home</b></a>
+                      <a class="Home nav_link" href="#"><b>Home</b></a>
                     </li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
@@ -147,10 +157,14 @@
       </div>
     </header>
 
-    <section style="padding: 100px 0px">
+
+
+   
+
+    <section id="about" style="padding: 100px 0px">
       <div class="container">
-        <div id="about" class="about">
-          <div class="section2_text">
+        <div  class="about">
+          <div class="section2_text" data-aos="zoom-in">
             <h2><b>ABOUT ME</b></h2>
             <span class="oval"></span>
             <p class="section2_p">
@@ -159,8 +173,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6"  data-aos="fade-up-right" >
             <img
+            
               class="img-fluid"
               style="border-radius: 10px; width: 555px; height: 370px"
               src="	https://infolook.net/tf_preview/showkil/assets/img/about/about.jpg"
@@ -168,7 +183,7 @@
             />
           </div>
           <div class="col-lg-6" style="display: flex; align-items: center">
-            <div class="side_text">
+            <div class="side_text" data-aos="fade-up-left">
               <p style="margin-top: 10px">A Quick <b> Bio</b></p>
               <p style="font-size: 15px; color: #777; line-height: 1.7">
                 Web Bean has everything you need to get your new website running
@@ -192,11 +207,11 @@
 
     <hr />
 
-    <section style="padding: 100px 0px">
+    <section id="services" style="padding: 100px 0px">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <div id="services" class="section2_text">
+            <div  class="section2_text" data-aos="zoom-in">
               <h2><b>WHAT I DO</b></h2>
               <span class="oval"></span>
               <p class="section2_p">
@@ -205,7 +220,8 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up"
+          data-aos-duration="2200">
             <div class="service_box">
               <div class="kvadrat">
                 <i class="fa-solid fa-laptop icon"></i>
@@ -218,7 +234,8 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up"
+          data-aos-duration="2200">
             <div class="service_box">
               <div class="kvadrat">
                 <i class="fa-solid fa-layer-group icon"></i>
@@ -231,7 +248,8 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up"
+          data-aos-duration="2200">
             <div class="service_box">
               <div class="kvadrat">
                 <i class="fa-solid fa-mobile-screen-button icon"></i>
@@ -244,7 +262,8 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up"
+          data-aos-duration="2200">
             <div class="service_box">
               <div class="kvadrat">
                 <i class="fa-solid fa-dharmachakra icon"></i>
@@ -262,11 +281,11 @@
 
     <hr />
 
-    <section  style="padding: 100px 0px">
+    <section id="work"  style="padding: 100px 0px">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <div id="work" class="section2_text">
+            <div  class="section2_text" data-aos="zoom-in">
               <h2><b>MY WORKS</b></h2>
               <span class="oval"></span>
               <p class="section2_p">
@@ -315,7 +334,9 @@
         <div class="mix all graphic col-lg-4">
           <div class="single">
             <div class="ph1">
-              <div  class="zoom"></div>
+              <div  class="zoom">
+                
+              </div>
               <img
                 src="https://infolook.net/tf_preview/showkil/assets/img/works/2.jpg"
                 alt=""
@@ -380,11 +401,11 @@
     
     <hr>
     
-    <section style="padding: 100px 0px">
+    <section  id="testimonial" style="padding: 100px 0px">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <div  id="testimonial"  class="section2_text" >
+            <div   class="section2_text" data-aos="zoom-in" >
               <h2><b>HAPPY  CLIENTS</b></h2>
               <span class="oval"></span>
               <p style="margin-top: 15px;" class="section2_p">
@@ -485,11 +506,11 @@
     <hr>
 
 
-    <section style="padding: 60px 0px">
+    <section id="contact" style="padding: 60px 0px">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <div id="contact" class="section2_text">
+            <div  class="section2_text" data-aos="zoom-in">
               <h2><b>CONTACT ME</b></h2>
               <span class="oval"></span>
               <p class="section2_p">
@@ -499,14 +520,18 @@
           </div>
           <div class="col-md-12">
             <div class="inputs">
-              <div class="form_group">
+              <div class="form_group" data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
                 <i style="color: #ff214f;" class="fa-solid fa-user "></i>
                 <input class="form_control" type="text" placeholder="Name "  name="name" required="required">
 
                 
 
               </div>
-              <div class="form_group">
+              <div class="form_group" data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
                 <i style="color: #ff214f;" class="fa-solid fa-paper-plane"></i>
                 <input class="form_control" type="text" placeholder="Email "  name="name" required="required">
 
@@ -514,7 +539,9 @@
 
               </div>
 
-              <div class="form_group">
+              <div class="form_group" data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
                 <i style="color: #ff214f;" class="fa-solid fa-envelope"></i>
                 <input class="form_control" type="text" placeholder="Message "  name="name" required="required">
 
@@ -522,7 +549,8 @@
 
               </div>
 
-              <button class="inp_button" type="button"> <b>Send Message</b></button>
+              <button class="inp_button"  data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom" type="button"> <b>Send Message</b></button>
               
             </div>
             <div class="sbutton"></div>
@@ -574,9 +602,28 @@
       </div>
     </footer>
 
+
+    <script>
+      AOS.init();
+    </script>
+
     
   </body>
 </html>
+
+
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+function myFunction() {
+if (document.documentElement.scrollTop <90) {
+document.getElementById("myNav").classList = "navbar fixed-top";
+} else {
+document.getElementById("myNav").classList = "navbar2 fixed-top";
+}
+}
+</script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
   integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
